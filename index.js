@@ -168,6 +168,6 @@ function rangeData(arr, min, max) {
 
     return result
 }
-
-console.log("Nomor 6:" + rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20))
+console.log("Nomor 6:");
+console.log(rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20))
 console.log("--------------------")
