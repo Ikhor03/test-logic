@@ -1,11 +1,4 @@
-/*
- 1. Buatlah fungsi sebagai berikut :
-    Apabila terdapat int = 4, maka outputnya 24 (prosesnya : 4*3*2*1)
-    Apabila terdapat int = 8, maka outputnya 40320 (prosesnya : 8*7*6*5*4*3*2*1)
-
-*/
-
-//1.
+//1.--------------------------
 function perkalian(number) {
     let acc = 1
     for (let i = number; i > 0; i--) {
@@ -14,17 +7,11 @@ function perkalian(number) {
     return acc
 }
 
-// console.log("--------------------")
-// console.log("Nomor 1: " + perkalian(8))
-// console.log("--------------------")
+console.log("--------------------")
+console.log("Nomor 1: " + perkalian(8))
+console.log("--------------------")
 
-/*
-2. Buatlah fungsi untuk reverse sebuah string
-    Apabila input = “abcde”, maka outputnya = “edcba”
-    Dilarang menggunakan function reverse, buatlah logika sendiri
-*/
-
-//2.
+//2.--------------------------
 function balikKata(kata) {
     let result = []
 
@@ -35,24 +22,10 @@ function balikKata(kata) {
     return result.join('')
 }
 
-// console.log("Nomor 2: " + balikKata("abcd"))
-// console.log("--------------------")
+console.log("Nomor 2: " + balikKata("abcd"))
+console.log("--------------------")
 
-/**
-3. Buatlah fungsi untuk menampilkan jumlah digit angka tergantung dimana posisi atau tempat dari angka dalam sebuah string “9.86-A5.321”! 
-Contoh: printDigitValue(‘9.86-A5.321’);
-Hasil :
-9865321
-9000000
-800000
-60000
-5000
-300
-20
-1
- */
-
-//3.
+//3.--------------------
 function printDigitValue(str) {
 
     let arr = []
@@ -79,34 +52,19 @@ function printDigitValue(str) {
     return arr.join('')
 }
 
-// console.log("Nomor 3: " + printDigitValue("9.86-A5.321"))
-// console.log("--------------------")
+console.log("Nomor 3: " + printDigitValue("9.86-A5.321"))
+console.log("--------------------")
 
-/**
- 
-3. Ketik kode untuk swap 2 integer variables tanpa VARIABLE TAMBAHAN 
-Contoh : let a = 3, let b = 7 => hasilnya a = 7, b = 3
-
- */
-
-//4.
+//4.------------------
 let a = 3;
 let b = 7;
 
 [a, b] = [b, a]
 
-// console.log("Nomor 4: " + "nilai a: ", a, "Nilai b : ", b)
-// console.log("--------------------")
+console.log("Nomor 4: " + "nilai a: ", a, "Nilai b : ", b)
+console.log("--------------------")
 
-/*
-5. Buatlah fungsi sebagai berikut :
-    int : 4, maka outputnya adalah : empat
-    int : 20, maka outputnya adalah : dua puluh
-    int : 39, maka outputnya adalah : tiga puluh sembilan
-    int : 104, maka outputnya adalah : silahkan masukkan bilangan 1-100
-*/
-
-//5.
+//5.-------------------
 function konversiString(int) {
     let result = 'silahkan masukkan bilangan 1-100'
     let bilanganDasar = ['satu', 'dua', 'tiga', 'empat', 'lima', 'enam', 'tujuh', 'delapan', 'sembilan', 'sepuluh']
@@ -143,19 +101,10 @@ function konversiString(int) {
     return result
 }
 
-// console.log("Nomor 5: " + konversiString(99))
-// console.log("--------------------")
+console.log("Nomor 5: " + konversiString(99))
+console.log("--------------------")
 
-/*
-6. Apabila terdapat sebuah data : 
-    array data =  [1,4,7,9,12], 
-    int low = 2,
-    int high = 15,
-    maka akan menghasilkan ouput [4,7,9,12]
-
-*/
-
-//6.
+//6.-----------------------------
 function rangeData(arr, min, max) {
     let result = []
 
@@ -168,17 +117,10 @@ function rangeData(arr, min, max) {
 
     return result
 }
-// console.log("Nomor 6:");
-// console.log(rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20))
-// console.log("--------------------")
+console.log("Nomor 6:");
+console.log(rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20))
+console.log("--------------------")
 
-/**
- Dari soal nomor 6, buatlah juga untuk menghasilkan output total ada berapa angka yg termasuk dari bagian low dan high
-array data =  [1,4,7,9,12], 
-int low = 2,
-int high = 15,
-maka akan menghasilkan ouput = 4
- */
 
 function countRange() {
     let arr = rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20)
@@ -186,31 +128,10 @@ function countRange() {
     return arr.length
 }
 
-// console.log("Nomor 7: ")
-// console.log(countRange())
-// console.log("--------------------")
+console.log("Nomor 7: ")
+console.log(countRange())
+console.log("--------------------")
 
-
-/**
- 7. Apabila terdapat int = 15, maka akan mencetak output berikut :
-1
-2
-Edu
-4
-Work
-Edu
-7
-8
-Edu
-Work
-11
-Edu
-13
-14
-EduWork
-
-keterangan : string edu untuk kelipatan 3, string work untuk kelipatan 5, string eduwork untuk kelipatan 3 dan 5
- */
 
 function printKelipatan(int) {
     for (let i = 1; i <= int; i++) {
@@ -224,11 +145,11 @@ function printKelipatan(int) {
     }
 }
 
-// console.log("Nomor: 8");
-// console.log(printKelipatan(15));
-// console.log("--------------------")
+console.log("Nomor: 8");
+console.log(printKelipatan(15));
+console.log("--------------------")
 
-//9.
+//9.-------------------------
 function minMax(arr, req) {
     let result = 0
 
@@ -251,9 +172,9 @@ function minMax(arr, req) {
 }
 
 // argument kedua melempar request mau output "low" atau "high"
-// console.log(minMax([4, 2, 6, 88, 3, 11], 'high'))
+console.log(minMax([4, 2, 6, 88, 3, 11], 'high'))
 
-//10
+//10----------------------
 function cekTahunKabisat (tahun) {
     if (tahun % 4 === 0) {
         return `${tahun} adalah tahun kabisat`
