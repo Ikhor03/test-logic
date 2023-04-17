@@ -228,6 +228,7 @@ function printKelipatan(int) {
 // console.log(printKelipatan(15));
 // console.log("--------------------")
 
+//9.
 function minMax(arr, req) {
     let result = 0
 
@@ -250,4 +251,15 @@ function minMax(arr, req) {
 }
 
 // argument kedua melempar request mau output "low" atau "high"
-console.log(minMax([4, 2, 6, 88, 3, 11], 'high'))
+// console.log(minMax([4, 2, 6, 88, 3, 11], 'high'))
+
+//10
+function cekTahunKabisat (tahun) {
+    if (tahun % 4 === 0) {
+        return `${tahun} adalah tahun kabisat`
+    } else {
+        return `${tahun} bukan tahun kabisat`
+    }
+}
+
+console.log(cekTahunKabisat(2024))
