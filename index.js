@@ -14,9 +14,9 @@ function perkalian(number) {
     return acc
 }
 
-console.log("--------------------")
-console.log("Nomor 1: " + perkalian(8))
-console.log("--------------------")
+// console.log("--------------------")
+// console.log("Nomor 1: " + perkalian(8))
+// console.log("--------------------")
 
 /*
 2. Buatlah fungsi untuk reverse sebuah string
@@ -35,8 +35,8 @@ function balikKata(kata) {
     return result.join('')
 }
 
-console.log("Nomor 2: " + balikKata("abcd"))
-console.log("--------------------")
+// console.log("Nomor 2: " + balikKata("abcd"))
+// console.log("--------------------")
 
 /**
 3. Buatlah fungsi untuk menampilkan jumlah digit angka tergantung dimana posisi atau tempat dari angka dalam sebuah string “9.86-A5.321”! 
@@ -79,8 +79,8 @@ function printDigitValue(str) {
     return arr.join('')
 }
 
-console.log("Nomor 3: " + printDigitValue("9.86-A5.321"))
-console.log("--------------------")
+// console.log("Nomor 3: " + printDigitValue("9.86-A5.321"))
+// console.log("--------------------")
 
 /**
  
@@ -95,8 +95,8 @@ let b = 7;
 
 [a, b] = [b, a]
 
-console.log("Nomor 4: " + "nilai a: ", a, "Nilai b : ", b)
-console.log("--------------------")
+// console.log("Nomor 4: " + "nilai a: ", a, "Nilai b : ", b)
+// console.log("--------------------")
 
 /*
 5. Buatlah fungsi sebagai berikut :
@@ -143,8 +143,8 @@ function konversiString(int) {
     return result
 }
 
-console.log("Nomor 5: " + konversiString(99))
-console.log("--------------------")
+// console.log("Nomor 5: " + konversiString(99))
+// console.log("--------------------")
 
 /*
 6. Apabila terdapat sebuah data : 
@@ -168,6 +168,86 @@ function rangeData(arr, min, max) {
 
     return result
 }
-console.log("Nomor 6:");
-console.log(rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20))
-console.log("--------------------")
+// console.log("Nomor 6:");
+// console.log(rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20))
+// console.log("--------------------")
+
+/**
+ Dari soal nomor 6, buatlah juga untuk menghasilkan output total ada berapa angka yg termasuk dari bagian low dan high
+array data =  [1,4,7,9,12], 
+int low = 2,
+int high = 15,
+maka akan menghasilkan ouput = 4
+ */
+
+function countRange() {
+    let arr = rangeData([1, 3, 5, 4, 66, 20, 12], 3, 20)
+
+    return arr.length
+}
+
+// console.log("Nomor 7: ")
+// console.log(countRange())
+// console.log("--------------------")
+
+
+/**
+ 7. Apabila terdapat int = 15, maka akan mencetak output berikut :
+1
+2
+Edu
+4
+Work
+Edu
+7
+8
+Edu
+Work
+11
+Edu
+13
+14
+EduWork
+
+keterangan : string edu untuk kelipatan 3, string work untuk kelipatan 5, string eduwork untuk kelipatan 3 dan 5
+ */
+
+function printKelipatan(int) {
+    for (let i = 1; i <= int; i++) {
+        if (i % 3 === 0) {
+            console.log('Edu')
+        } else if (i % 5 === 0) {
+            console.log("Work")
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+// console.log("Nomor: 8");
+// console.log(printKelipatan(15));
+// console.log("--------------------")
+
+function minMax(arr, req) {
+    let result = 0
+
+    let min = Infinity
+    let max = -Infinity
+    for (let i = 0; i < arr.length; i++) {
+        let perArr = arr[i]
+        if (req === 'low') {
+            if (perArr < min) { 
+                [perArr, min] = [min, perArr]
+            }
+        }
+
+        if (perArr > max) {
+            [perArr, max] = [max, perArr]
+        }
+    }
+
+    return req === 'low' ? min : max
+}
+
+// argument kedua melempar request mau output "low" atau "high"
+console.log(minMax([4, 2, 6, 88, 3, 11], 'high'))
