@@ -61,14 +61,14 @@ EduWork
 
 keterangan : string edu untuk kelipatan 3, string work untuk kelipatan 5, string eduwork untuk kelipatan 3 dan 5
 
-Buatlah fungsi untuk menentukan bilangan terkecil dan terbesar dari sebuah array
+9. Buatlah fungsi untuk menentukan bilangan terkecil dan terbesar dari sebuah array
 Contoh : array [4,2,6,88,3,11]
 Maka outputnya adalah low : 2, high : 88
 dilarang menggunakan built in function
 
-9. Buatlah fungsi untuk mengecek tahun kabisat
+10. Buatlah fungsi untuk mengecek tahun kabisat
 input : 2021
 output : 2021 bukan tahun kabisat
 
-10. input : 2024
+input : 2024
 output : 2024 adalah tahun kabisat
